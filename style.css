@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ececee;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1145px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .main-title {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+}
+
+.container .main-title {
+    width: 500px;
+}
+
+.container .main-title h1 {
+    font-size: 75px;
+    color: #1877F2;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container .main-title p {
+    font-size: 25px;
+}
+
+@media (max-width:700px) {
+    .container .main-title h1 {
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+
+    .container .main-title p {
+        font-size: 19px;
+    }
+}
+
+.face-form {
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 10px 10px 10px #ddd;
+    width: 450px;
+}
+
+.face-form input {
+    display: block;
+    width: 100%;
+    margin: 25px 0;
+    height: 47px;
+    outline-color: #1877F2;
+    border-radius: 8px;
+    border: 1px solid #c0c0c0;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.face-form input[type="submit"] {
+    background-color: #1877F2;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.face-form form>a {
+    text-decoration: none;
+    color: #1877F2;
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+.face-form form>a:hover {
+    text-decoration: underline;
+}
+
+.face-form form a::after {
+    content: "";
+    position: absolute;
+    width: calc(100% - 50px);
+    background-color: #7777773f;
+    height: 1px;
+    left: 25px;
+    bottom: 100px;
+}
+
+.face-form form button {
+    width: fit-content;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    padding: 10px;
+    width: 210px;
+    height: 50px;
+    background-color: rgb(20, 193, 20);
+    border: 0;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.face-form form button:hover {
+    background-color: rgb(21, 177, 21);
+}
+
+.face-form form button a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.face-form p {
+    position: absolute;
+    top: 105%;
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+}
+
+.face-form p a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.face-form p a:hover {
+    text-decoration: underline;
+}
